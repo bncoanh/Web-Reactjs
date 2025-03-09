@@ -1,0 +1,39 @@
+@use "@styles/mixin.module.scss" as mixin;
+@use "@styles/global.module.scss" as global;
+@use "@styles/variable.module.scss" as var;
+.container {
+  background-image: url(../../assets/icon/image/Banner_config.jpeg);
+  height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mixin.flex_box_custom(center, center, 0px);
+  background-position: center;
+  // justify-content: center;
+  // flex-direction: column;
+  // text-align: center;
+}
+
+.containertext1 {
+  font-size: 42px;
+  // text-transform: capitalize;
+  color: #222222;
+  margin-bottom: 40px;
+  
+}
+.containertext2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #222222;
+  margin-bottom: 40px;
+}
+
+.containertext {
+  @include mixin.flex_box_custom(center, center, 0px);
+  flex-direction: column;
+  // width: 50%;
+  // height: 100%;
+  // padding: 0px 20px;
+  // border-radius: 10px;
+  // box-shadow: 0px 0px 10px 0px rgba(246, 238, 238, 0.1);
+}

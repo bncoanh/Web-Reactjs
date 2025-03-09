@@ -1,0 +1,21 @@
+@use "@styles/mixin.module.scss" as mixin;
+
+.container {
+  @include mixin.flex_box_custom(center, center, 0px);
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.container1 {
+  @include mixin.flex_box_custom(center, center, 0px);
+  flex-direction: column;
+  width: 100%;
+}
+
+.container::before{
+  left: 0;
+}
+
+.container::after{
+  right: 0;
+}

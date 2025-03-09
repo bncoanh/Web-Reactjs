@@ -30,6 +30,8 @@ function MyHeader() {
           src={logo}
           alt="logo"
           style={{
+            marginRight: "30px",
+            marginLeft: "30px",
             width: "300px",
             height: "50px",
           }}

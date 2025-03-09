@@ -1,14 +1,18 @@
 @use "@styles/mixin.module.scss" as mixin;
 @use "@styles/variable.module.scss" as var;
 
+
 .containerHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 15px;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+   @include mixin.flex_box_custom(center, center, 0px);
+  
 }
 .containerBox {
   @include mixin.flex_box_custom(center, center, 60px);
+
 }
 .containerBoxIcon {
   @include mixin.flex_box_custom(center, center, 20px);
@@ -20,7 +24,7 @@
 .boxIcon {
   @include mixin.radin_comon(50%);
   @include mixin.flex_box_custom(center, center, 0);
-  background-color: var.$primary_color;
+  // background-color: var.$primary_color;
   width: 30px;
   height: 30px;
 }
@@ -31,7 +35,7 @@
 
   width: 100%;
   height: 2.5px;
-  background-color: var.$primary_color;
+
   transform-origin: center;
   transform: scale(0);
   transition: transform 300ms;

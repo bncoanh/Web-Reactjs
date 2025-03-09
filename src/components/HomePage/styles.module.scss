@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  flex-direction: column;
+}

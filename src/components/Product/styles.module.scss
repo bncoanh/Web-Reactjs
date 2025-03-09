@@ -1,0 +1,12 @@
+@use '@styles/mixin.module.scss' as mixin;
+@use '@styles/variable.module.scss' as var;
+
+.container{
+  @include mixin.flex_box_custom(space-between, center, 10px);
+  padding-top: 30px;
+}
+
+.containerItem{
+  padding-top: 30px;
+  width: 100%;
+}
